@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter,Routes,Route} from "react-router-dom";
-import Home from './pages/Home';
 import Navbar from './components/Navbar'
 import About from './pages/About'
+import Cart from './pages/Cart'
+import Error from './pages/Error'
+import Home from './pages/Home';
+import Login from './pages/Login'
 import Products from './pages/Products'
 import SingleProduct from './pages/SingleProduct'
-import Cart from './pages/Cart'
-import Login from './pages/Login'
-import Error from './pages/Error'
+import Footer from './components/Footer';
 
 function App() {
   return <>
@@ -22,6 +23,7 @@ function App() {
     <Route path='login' element={<Login/>}/>
     <Route path='*' element={<Error/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </>
 }
