@@ -10,7 +10,7 @@ const About = () => {
                 <div className='underline'></div>
             </div>
             <p>
-            This company was founded in 2020 as an online furniture store. We started off with a small team of just 8 people. Today we are over 600 employees and considered one of the leading players in the e-commerce space. Our idea is to offer a wide range of well-designed, functional home furnishing products at prices so low that as many people as possible will be able to afford them. </p>
+            Our company was founded in 2020 as an online furniture store. We started off with a small team of just 8 people. Today we are over 600 employees and considered one of the leading players in the e-commerce space. Our idea is to offer a wide range of well-designed, functional home furnishing products at prices so low that as many people as possible will be able to afford them. </p>
         </article>
     </Wrapper>
 }
@@ -31,7 +31,7 @@ const Wrapper = styled.section`
     margin: 0 auto;
     margin-top: 2rem;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
   }
   .title {
     text-align: left;

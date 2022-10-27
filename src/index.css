@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(238, 222, 207);
+  background-color: rgb(240, 231, 222);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -29,14 +29,16 @@ code {
   display: flex;
   align-items: center;
 }
+
 .nav-center {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
   /* margin-left: auto;
   margin-right: 0; */
 }
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -52,23 +54,24 @@ code {
   font-size: 17px;
   padding: 0.25rem 0.5rem;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
   font-size: 20px;
+  display: block;
 }
 
-.error-page{
+.error-page {
   padding: 5rem 0;
   min-height: calc(100vh-10rem);
 }
 
-.btn{
+.btn {
   text-transform: uppercase;
   background: hsl(22, 31%, 52%);
   color: hsl(22, 31%, 88%);
-  font-weight:bold;
+  font-weight: bold;
   font-size: 0.875rem;
   text-decoration: none;
   cursor: pointer;
@@ -81,10 +84,12 @@ code {
 .section {
   padding: 5rem 0;
 }
+
 .section-center {
-  width: 90vw;
+  width: 75vw;
   margin: 0 auto;
-  max-width: 1200px;
+  margin-bottom: 2rem;
+  max-width: 1000px;
 }
 
 .title {
@@ -98,4 +103,34 @@ code {
   background: hsl(22, 31%, 52%);
   margin-left: auto;
   margin-right: auto;
+}
+
+.service{
+  margin:0 auto;
+  max-width: 15rem;
+  border-radius: 8px;
+  background-color: hsl(22, 31%, 75%);
+  padding: 1rem;
+}
+
+.service .div{
+  text-align: center;
+}
+.service .icon{
+  font-size: 24px;
+  color: rgb(65, 23, 23);
+
+}
+
+.service .h3{
+  margin-top: 0.125rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service .p{
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(48, 48, 48);
 }
