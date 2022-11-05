@@ -67,6 +67,10 @@ code {
   min-height: calc(100vh-10rem);
 }
 
+.content-page {
+  min-height: calc(100vh - (20vh + 10rem));
+}
+
 .btn {
   text-transform: uppercase;
   background: hsl(22, 31%, 52%);
@@ -105,30 +109,29 @@ code {
   margin-right: auto;
 }
 
-.service{
-  margin:0 auto;
+.service {
+  margin: 0 auto;
   max-width: 15rem;
   border-radius: 8px;
   background-color: hsl(22, 31%, 75%);
   padding: 1rem;
 }
 
-.service .div{
+.service .div {
   text-align: center;
 }
-.service .icon{
+.service .icon {
   font-size: 24px;
   color: rgb(65, 23, 23);
-
 }
 
-.service .h3{
+.service .h3 {
   margin-top: 0.125rem;
   text-transform: uppercase;
   text-align: center;
 }
 
-.service .p{
+.service .p {
   margin-top: 0.5rem;
   text-align: center;
   font-size: 13px;
