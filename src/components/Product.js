@@ -20,7 +20,7 @@ const Product = ({ image, name, price, id }) => {
 }
 
 function modified(price){
-    return `Rs. ${price}/-`;
+  return `₹${price}/-`;
 }
 const Wrapper = styled.article`
   .container {
@@ -36,6 +36,7 @@ const Wrapper = styled.article`
     transition: all 0.3s linear;
   }
   .link {
+    background-color:#663300;
     position: absolute;
     top: 50%;
     left: 50%;
