@@ -137,3 +137,8 @@ code {
   font-size: 13px;
   color: rgb(48, 48, 48);
 }
+
+.list-link{
+  text-decoration: none;
+  color: black;
+}

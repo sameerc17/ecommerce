@@ -32,10 +32,19 @@ const SingleProduct = () => {
                     <p className="price">{modified(price)}</p>
                     <p className="info">{description}</p>
                     <hr />
-                    <p className="details">Company : {company}</p>
-                    <p className="details">Category : {category}</p>
-                    {stock>0 && <p className="details">Availabilty : In stock</p>}
-                    {stock===0 && <p className="details">Availabilty : Out of stock</p>}
+                    <p className="details">
+                        <span>Availabilty:</span>
+                        {stock>0?'In stock':'Out of stock'}
+                    </p>
+                    <p className="details">
+                        <span>Category:</span>
+                        {category}
+                    </p>
+                    <p className="details">
+                        <span>Company:</span>
+                        {company}
+                    </p>
+                    
                 </div>
             </div>
         </Wrapper>
@@ -75,8 +84,14 @@ const Wrapper = styled.main`
         font-size:18px
     }
     .details{
-        text-transform: capitalize;
         margin-top: 10px;
+        text-transform: capitalize;
+        width: 300px;
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        span {
+            font-weight: 700;
+        }
     } 
   }
 
