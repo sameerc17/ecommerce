@@ -4,7 +4,7 @@ import { BsFillGridFill, BsList } from 'react-icons/bs'
 import styled from 'styled-components'
 import { Tooltip } from '@mui/material'
 const Sort = () => {
-    const { filtered_products: products, grid_display, setGrid, setList } = useContext(FilterContext)
+    const { filtered_products: products, grid_display, setGrid, setList , sort, sortBy} = useContext(FilterContext)
     return <Wrapper>
         <div className='btn-container'>
             <Tooltip title='Switch to grid Display'>
@@ -22,11 +22,11 @@ const Sort = () => {
         <hr />
         <form>
             <label htmlFor='sort'>sort by </label>
-            <select name='sort' id='sort' className='sort-input'>
+            <select name='sort' id='sort' className='sort-input' value={sort} onChange={sortBy}>
+                <option value='name-a'>name (a-z)</option>
+                <option value='name-z'>name (z-a)</option>                
                 <option value='price-lowest'>price (lowest)</option>
                 <option value='price-highest'>price (highest)</option>
-                <option value='name-a'>name (a-z)</option>
-                <option value='name-z'>name (z-a)</option>
             </select>
         </form>
     </Wrapper>

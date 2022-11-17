@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 export const ListDisplay = ({ products }) => {
     return <Wrapper>
         {products.map((item) => {
-            const { image, name, price, id, description } = item;
+            const { image, name, price, id, description,stars } = item;
             return <article key={id}>
                 <img src={image} alt={name} />
                 <div>
-                    <h4>{name}</h4>
+                    <h4>{name} {stars}</h4>
                     <p className='price'>{modified(price)}</p>
                     <p className='desc'>{`${description.substring(0, 200)}...`}</p>
                     <Link className='list-link' to={`/products/${id}`}><button>DETAILS</button></Link>
