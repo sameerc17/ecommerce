@@ -16,7 +16,7 @@ const Wrapper = styled.footer`
   // position: absolute;
   bottom:0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #222;
@@ -30,9 +30,6 @@ const Wrapper = styled.footer`
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;
-  }
-  @media (min-width: 776px) {
-    flex-direction: row;
   }
 `
 

@@ -39,9 +39,8 @@ const Wrapper = styled.section`
   .underline {
     margin-left: 0;
   }
-  @media (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
-  }
+  grid-template-columns: 1fr 1fr;
+
 `
 
 export default About

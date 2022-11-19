@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { SingleProduct_url as url } from "../data/url";
 import ProductGallery from '../components/ProductGallery'
 import Rating from "../components/Rating";
+import AddToCart from "../components/AddToCart";
 
 const SingleProduct = () => {
     const { id } = useParams();
@@ -44,6 +45,8 @@ const SingleProduct = () => {
                         <span>Company:</span>
                         {company}
                     </p>
+                    <hr/>
+                    {stock>0 && <AddToCart product={product}/>}
                     
                 </div>
             </div>
